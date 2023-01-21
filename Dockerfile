@@ -12,7 +12,7 @@ Run pip install azure-cosmos
 ADD . /cosmosdb-with-fastapi
 
 # ssh
-ENV "root:Docker!"
+ENV SSH_PASSWD "root:Docker!"
 RUN apt-get update \
         && apt-get install -y --no-install-recommends dialog \
         && apt-get update \
